@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "buildonly": "vite build",
     "addgit": "git add dist -f",
-    "publish": "gh-pages -d dist"
+    "publish": "gh-pages -d dist",
+    "parallel": "npm run dev && cd ./Back/backend && python manage.py runserver 7800"
   },
   "dependencies": {
     "serpapi": "^1.1.1",
