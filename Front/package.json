@@ -10,9 +10,11 @@
     "buildonly": "vite build",
     "addgit": "git add dist -f",
     "publish": "gh-pages -d dist",
-    "parallel": "npm run dev && cd ./Back/backend && python manage.py runserver 7800"
+    "server": "python Back/backend/manage.py runserver 7800",
+    "parallel": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
+    "concurrently": "^8.0.1",
     "serpapi": "^1.1.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
