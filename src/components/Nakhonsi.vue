@@ -5,7 +5,7 @@ export default {
   provide() {
     return {
       select:'?Select(number)=1',
-      downloadURL: 'https://35.247.174.148:7800/api/download.csv?Select(number)=1',
+      downloadURL: 'https://theory-of-computation-3d.github.io:7800/api/download.csv?Select(number)=1',
     }
   }
 }

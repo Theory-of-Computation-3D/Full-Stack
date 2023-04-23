@@ -27,7 +27,7 @@ export default {
   methods: {
     getData() {
       try {
-        fetch('https://35.247.174.148:7800/api/select'+this.select, {
+        fetch('https://theory-of-computation-3d.github.io:7800/api/select'+this.select, {
         method: 'GET',
         headers: {
                   'Content-Type': 'application/json',
